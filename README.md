@@ -1,10 +1,10 @@
 #### Demo
 
-[ThePeoplesBank App](https://gringotts-defi.vercel.app/)
+[ThePeoplesBank App](https://thepeoplesbank.vercel.app/)
 
 #### Clone this repository
 
-`git clone https://github.com/cybergirldinah/decentralized-banking-app`
+`git clone https://https://github.com/ThePeoplesTokn/ThePeoplesBank`
 
 #### Install Dependencies
 
