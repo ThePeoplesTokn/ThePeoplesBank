@@ -13,7 +13,7 @@ import Loader from "react-loader-spinner";
 import Web3 from "web3";
 import tpbank from "./abis/TPBank.json";
 import thepeoplestoken from "./abis/ThePeoplesToken.json";
-
+import tpblogo from "./images/tpblogo.png";
 import metamask from "./images/metamask.png";
 import eth from "./images/bnb-logo.png";
 import galleon from "./images/logowhite.png";
@@ -204,7 +204,7 @@ const App = () => {
             <Navbar>
               <Container>
                 <Navbar.Brand href="#home">
-                  <span id="title">ThePeoplesBank</span>
+                  <img src={tpblogo} height="200" alt="TPBank Logo" />
                 </Navbar.Brand>
               </Container>
             </Navbar>
@@ -216,13 +216,13 @@ const App = () => {
               onClick={connectWallet}
             >
               {" "}
-              <img src={metamask} height="32" alt="Metamask Logo" />
+              <img src={metamask} height="27" alt="Metamask Logo" />
               {currentAccount
                 ? ` ${currentAccount.slice(0, 6)}......${currentAccount.slice(
                     currentAccount.length - 4,
                     currentAccount.length
                   )}`
-                : "Connect to BSCTestNet"}
+                : "Connect Wallet"}
             </Button>
           </Col>
         </Row>
@@ -230,9 +230,12 @@ const App = () => {
           <Col sm={{ span: 6 }}>
             <span id="description">
               To make deposits and withdrawals, please connect your Metamask
-              Wallet to the Rinkeby network. You will need some test ETH as
+              Wallet to the BSC TestNet network. You will need some test BNB as
               well. Try the official{" "}
-              <a href="https://faucet.rinkeby.io/">Rinkeby Faucet</a>.
+              <a href="https://testnet.binance.org/faucet-smart">
+                BSC TestNet Faucet
+              </a>
+              .
             </span>
           </Col>
         </Row>
